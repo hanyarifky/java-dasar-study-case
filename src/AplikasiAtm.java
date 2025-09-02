@@ -5,15 +5,33 @@ public class AplikasiAtm {
     public static float saldo = 0;
 
     public static void main(String[] args) {
-        System.out.println("Hello Mas");
+
+        testShowData();
     }
 
+
+    // ========== Business Logic ==========
+    /**
+     * Fungsi untuk menampilkan saldo dan nama nasabah
+     */
+    public static void showData()
+    {
+        System.out.println("Selamat Datang, " + nama_nasabah);
+        System.out.println("Saldo Anda = " + saldo);
+    }
+
+    public static void testShowData()
+    {
+        showData();
+    }
+
+    // ========== View ==========
     /**
      * Fungsi untuk menampilkan menu utama
      */
-    public static void mainMenu()
+    public static void viewMainMenu()
     {
-        
+
     }
 
     /**
