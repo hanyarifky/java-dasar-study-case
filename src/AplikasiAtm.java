@@ -43,7 +43,7 @@ public class AplikasiAtm {
     }
 
     /**
-     * Fungsi untuk menampilkan menu ambil tabungan
+     * Fungsi untuk menampilkan menu ambil tabungannnnnnnnnnnnnnnnn
      */
     public static void viewWithdraw()
     {
