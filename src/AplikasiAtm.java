@@ -33,9 +33,19 @@ public class AplikasiAtm {
      */
     public static void withdraw()
     {
-        System.out.println("");
-        String jumlahUang = scanner.nextLine();
+        System.out.print("Silahkan masukkan jumlah nominal = ");
+        int jumlahUang = scanner.nextInt();
+        if(jumlahUang >= saldo){
+            System.out.println("Saldo anda tidak mencukupi untuk melakukan penarikan");
+        } else {
+            System.out.println("Berhasil melakukan penarikan");
+        }
 
+    }
+
+    public static void testWithdraw()
+    {
+        withdraw();
     }
 
     // ========== View ==========
