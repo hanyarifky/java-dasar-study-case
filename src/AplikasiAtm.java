@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class AplikasiAtm {
 
     public static String pinAtm = "081104";
     public static String nama_nasabah = "Muhammad Rifky Ramadhani";
     public static float saldo = 0;
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -23,6 +26,16 @@ public class AplikasiAtm {
     public static void testShowData()
     {
         showData();
+    }
+
+    /**
+     * Fungsi untuk
+     */
+    public static void withdraw()
+    {
+        System.out.println("");
+        String jumlahUang = scanner.nextLine();
+
     }
 
     // ========== View ==========
