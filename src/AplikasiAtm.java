@@ -9,7 +9,7 @@ public class AplikasiAtm {
 
     public static void main(String[] args) {
 
-        testShowData();
+        testWithdraw();
     }
 
 
@@ -31,11 +31,10 @@ public class AplikasiAtm {
     /**
      * Fungsi untuk
      */
-    public static void withdraw()
+    public static void withdraw(int nominal)
     {
-        System.out.print("Silahkan masukkan jumlah nominal = ");
-        int jumlahUang = scanner.nextInt();
-        if(jumlahUang >= saldo){
+
+        if(nominal >= saldo){
             System.out.println("Saldo anda tidak mencukupi untuk melakukan penarikan");
         } else {
             System.out.println("Berhasil melakukan penarikan");
@@ -45,8 +44,13 @@ public class AplikasiAtm {
 
     public static void testWithdraw()
     {
-        withdraw();
+        withdraw(10000);
     }
+
+    /**
+     * Fungsi untuk melakukan deposit
+     *
+     */
 
     // ========== View ==========
     /**
@@ -70,6 +74,8 @@ public class AplikasiAtm {
      */
     public static void viewWithdraw()
     {
+        System.out.println("======== Penarikan Tunai ========");
+        System.out.print("Silahkan masukkan jumlah nominal = ");
 
     }
 
