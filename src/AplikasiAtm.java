@@ -4,12 +4,12 @@ public class AplikasiAtm {
 
     public static String pinAtm = "081104";
     public static String nama_nasabah = "Muhammad Rifky Ramadhani";
-    public static float saldo = 0;
+    public static float saldo = 1000000;
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        testWithdraw();
+        testViewWithdraw();
     }
 
 
@@ -29,15 +29,17 @@ public class AplikasiAtm {
     }
 
     /**
-     * Fungsi untuk
+     * Fungsi untuk menarik uang dari ATM
      */
     public static void withdraw(int nominal)
     {
-
-        if(nominal >= saldo){
+        if(nominal > 10000000){
+            System.out.println("Jumlah penarikan tidak boleh lebih dari Rp 10.000.000");
+        } else if(nominal >= saldo){
             System.out.println("Saldo anda tidak mencukupi untuk melakukan penarikan");
-        } else {
-            
+        }
+        else {
+            saldo -= nominal;
             System.out.println("Berhasil melakukan penarikan");
         }
 
@@ -45,7 +47,9 @@ public class AplikasiAtm {
 
     public static void testWithdraw()
     {
+        System.out.println("Saldo sekarang adalah = " + saldo);
         withdraw(10000);
+        System.out.println("Saldo setelah fungsi withdraw dijalankan adalah = " + saldo);
     }
 
     /**
@@ -73,12 +77,20 @@ public class AplikasiAtm {
 //    /**
 //     * Fungsi untuk menampilkan menu ambil tabungan
 //     */
-//    public static void viewWithdraw()
-//    {
-//        System.out.println("======== Penarikan Tunai ========");
-//        System.out.print("Silahkan masukkan jumlah nominal = ");
-//
-//    }
+    public static void viewWithdraw()
+    {
+        System.out.println("======== Penarikan Tunai ========");
+        System.out.print("Silahkan masukkan jumlah nominal = ");
+        int nominal = scanner.nextInt();
+        withdraw(nominal);
+    }
+
+    public static void testViewWithdraw()
+    {
+        System.out.println("Saldo sekarang adalah = " + saldo);
+        viewWithdraw();
+        System.out.println("Saldo setelah fungsi withdraw dijalankan adalah = " + saldo);
+    }
 //
 //    /**
 //     * Fungsi untuk menampilkan menu saldo tabungan
