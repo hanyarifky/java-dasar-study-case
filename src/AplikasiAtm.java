@@ -37,6 +37,7 @@ public class AplikasiAtm {
         if(nominal >= saldo){
             System.out.println("Saldo anda tidak mencukupi untuk melakukan penarikan");
         } else {
+            
             System.out.println("Berhasil melakukan penarikan");
         }
 
@@ -56,36 +57,36 @@ public class AplikasiAtm {
     /**
      * Fungsi untuk menampilkan menu utama
      */
-    public static void viewMainMenu()
-    {
-
-    }
-
-    /**
-     * Fungsi untuk menampilkan menu deposit tabungan
-     */
-    public static void viewDeposit()
-    {
-
-    }
-
-    /**
-     * Fungsi untuk menampilkan menu ambil tabungan
-     */
-    public static void viewWithdraw()
-    {
-        System.out.println("======== Penarikan Tunai ========");
-        System.out.print("Silahkan masukkan jumlah nominal = ");
-
-    }
-
-    /**
-     * Fungsi untuk menampilkan menu saldo tabungan
-     */
-    public static void viewSaldo()
-    {
-
-    }
+//    public static void viewMainMenu()
+//    {
+//
+//    }
+//
+//    /**
+//     * Fungsi untuk menampilkan menu deposit tabungan
+//     */
+//    public static void viewDeposit()
+//    {
+//
+//    }
+//
+//    /**
+//     * Fungsi untuk menampilkan menu ambil tabungan
+//     */
+//    public static void viewWithdraw()
+//    {
+//        System.out.println("======== Penarikan Tunai ========");
+//        System.out.print("Silahkan masukkan jumlah nominal = ");
+//
+//    }
+//
+//    /**
+//     * Fungsi untuk menampilkan menu saldo tabungan
+//     */
+//    public static void viewSaldo()
+//    {
+//
+//    }
 
 
 }
