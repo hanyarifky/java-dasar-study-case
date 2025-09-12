@@ -9,7 +9,7 @@ public class AplikasiAtm {
 
     public static void main(String[] args) {
 
-        testViewWithdraw();
+        testViewSaldo();
     }
 
 
@@ -56,6 +56,16 @@ public class AplikasiAtm {
      * Fungsi untuk melakukan deposit
      *
      */
+    public static void deposit(int nominal)
+    {
+        if(nominal > 10000000)
+        {
+            System.out.println("Jumlah deposit tidak boleh lebih dari Rp 10.000.000");
+        } else {
+            saldo += nominal;
+            System.out.println("Berhasil melakukan deposit");
+        }
+    }
 
     // ========== View ==========
     /**
@@ -66,14 +76,14 @@ public class AplikasiAtm {
 //
 //    }
 //
-//    /**
-//     * Fungsi untuk menampilkan menu deposit tabungan
-//     */
-//    public static void viewDeposit()
-//    {
-//
-//    }
-//
+    /**
+     * Fungsi untuk menampilkan menu deposit tabungan
+     */
+    public static void viewDeposit()
+    {
+
+    }
+
 //    /**
 //     * Fungsi untuk menampilkan menu ambil tabungan
 //     */
@@ -91,14 +101,20 @@ public class AplikasiAtm {
         viewWithdraw();
         System.out.println("Saldo setelah fungsi withdraw dijalankan adalah = " + saldo);
     }
-//
-//    /**
-//     * Fungsi untuk menampilkan menu saldo tabungan
-//     */
-//    public static void viewSaldo()
-//    {
-//
-//    }
+
+    /**
+     * Fungsi untuk menampilkan menu saldo tabungan
+     */
+    public static void viewSaldo()
+    {
+        System.out.println("======== Informasi Saldo ========");
+        System.out.print("Saldo Anda = "+saldo);
+    }
+
+    public static void testViewSaldo()
+    {
+        viewSaldo();
+    }
 
 
 }
