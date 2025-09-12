@@ -7,9 +7,9 @@ public class AplikasiAtm {
     public static float saldo = 0;
     public static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
-        testViewDeposit();
     }
 
 
