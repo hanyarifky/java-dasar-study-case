@@ -9,7 +9,7 @@ public class AplikasiAtm {
 
     public static void main(String[] args)
     {
-
+        testViewDeposit();
     }
 
 
@@ -89,9 +89,9 @@ public class AplikasiAtm {
 
     public static void testViewDeposit()
     {
-        System.out.println("Saldo ATM sebelum di deposit = "+saldo);
+//        System.out.println("Saldo ATM sebelum di deposit = "+saldo);
         viewDeposit();
-        System.out.println("Saldo ATM setelah di deposit = "+saldo);
+//        System.out.println("Saldo ATM setelah di deposit = "+saldo);
     }
 
 //    /**
@@ -107,9 +107,9 @@ public class AplikasiAtm {
 
     public static void testViewWithdraw()
     {
-        System.out.println("Saldo sekarang adalah = " + saldo);
+//        System.out.println("Saldo sekarang adalah = " + saldo);
         viewWithdraw();
-        System.out.println("Saldo setelah fungsi withdraw dijalankan adalah = " + saldo);
+//        System.out.println("Saldo setelah fungsi withdraw dijalankan adalah = " + saldo);
     }
 
     /**
