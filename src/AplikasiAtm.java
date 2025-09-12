@@ -4,12 +4,12 @@ public class AplikasiAtm {
 
     public static String pinAtm = "081104";
     public static String nama_nasabah = "Muhammad Rifky Ramadhani";
-    public static float saldo = 1000000;
+    public static float saldo = 0;
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        testViewSaldo();
+        testViewDeposit();
     }
 
 
@@ -81,7 +81,17 @@ public class AplikasiAtm {
      */
     public static void viewDeposit()
     {
+        System.out.println("======== Menu Deposit ========");
+        System.out.print("Silahkan masukkan jumlah nominal = ");
+        int nominal = scanner.nextInt();
+        deposit(nominal);
+    }
 
+    public static void testViewDeposit()
+    {
+        System.out.println("Saldo ATM sebelum di deposit = "+saldo);
+        viewDeposit();
+        System.out.println("Saldo ATM setelah di deposit = "+saldo);
     }
 
 //    /**
