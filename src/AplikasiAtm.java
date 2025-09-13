@@ -9,7 +9,6 @@ public class AplikasiAtm {
 
     public static void main(String[] args)
     {
-        testViewDeposit();
     }
 
 
@@ -71,10 +70,13 @@ public class AplikasiAtm {
     /**
      * Fungsi untuk menampilkan menu utama
      */
-//    public static void viewMainMenu()
-//    {
-//
-//    }
+    public static void viewMainMenu()
+    {
+        while(true)
+        {
+
+        }
+    }
 //
     /**
      * Fungsi untuk menampilkan menu deposit tabungan
