@@ -74,7 +74,9 @@ public class AplikasiAtm {
     {
         while(true)
         {
-
+            if(true){
+                System.out.println("Mantap");
+            }
         }
     }
 //
